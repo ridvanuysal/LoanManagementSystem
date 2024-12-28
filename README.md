@@ -41,7 +41,12 @@ Database handles CRUD operations for customers, loans, and installments.
 4.3.GET   /api/user/list-loan           List loans            ADMIN,USER
 4.4.GET   /api//user/installments       List installments     ADMIN,USER
 4.5.PUT   /api//admin/pay-installment   Pay loan installment  ADMIN
-   
+
+5. Prerequisites:
+
+Install Java 17 and Maven.
+
+Set up H2 database 
 
 
 

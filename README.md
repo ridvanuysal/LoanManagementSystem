@@ -36,11 +36,11 @@ Database handles CRUD operations for customers, loans, and installments.
 
 4. API Endpoints
 
-   4.1.POST   /api/admin/customers         Add new customer      ADMIN
-   4.2.POST   /api/admin/loans             Create new loan       ADMIN
-   4.3.GET   /api/user/list-loan           List loans            ADMIN,USER
-   4.4.GET   /api//user/installments       List installments     ADMIN,USER
-   4.5.PUT   /api//admin/pay-installment   Pay loan installment  ADMIN
+4.1.POST   /api/admin/customers         Add new customer      ADMIN
+4.2.POST   /api/admin/loans             Create new loan       ADMIN
+4.3.GET   /api/user/list-loan           List loans            ADMIN,USER
+4.4.GET   /api//user/installments       List installments     ADMIN,USER
+4.5.PUT   /api//admin/pay-installment   Pay loan installment  ADMIN
    
 
 

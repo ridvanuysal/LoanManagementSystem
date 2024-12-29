@@ -48,6 +48,35 @@ Install Java 17 and Maven.
 
 Set up H2 database 
 
+------------------------------------------------------------------------
+Running Application
+1. mvn clean package (Java 17 required)
+2. java -jar your_target_path/LoanManagementSystem-0.0.1-SNAPSHOT.jar
+
+------------------------------------------------------------------------
+Using Application
+1. It is recommended to first create a customer.
+   POST http://localhost:8080/api/admin/customers
+   {
+    "name":"Ali",
+    "surname":"Test",
+    "creditLimit":40000,
+    "usedCredit":10000
+   }
+2. Create loan for created customer.
+   POST http://localhost:8080/api/admin/loans
+   {
+    "customerId": 1,
+    "amount": 2000,
+    "interestRate":0.50,
+    "installments":6
+   }
+3. List Loans and Loan Insallments.
+   GET http://localhost:8080/api/installments?loanId=1
+   GET http://localhost:8080/api/user/list-loans?customerId=1
+
+NOTE: There are two role defination in application. User and Admin. Passwords and Usernames for this two roles are stored in application properties file and must authenticate with Basic Auth. before sending requests.
+
 
 
    
